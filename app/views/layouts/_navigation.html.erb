@@ -1,55 +1,43 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-black" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <i class="fas fa-atlas fa-3x"></i>
     </a>
-
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="navbar" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item" href="/">
         Home
       </a>
-
-      <a class="navbar-item" href="/articles/">
-        Blog
-      </a>
-        <a class="navbar-item">
-            Knowledgebase
-        </a>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
+        <a class="navbar-link" href="/articles">
+          Blog
         </a>
-
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="/about">
-            About
+          <a class="navbar-item" href="/articles/new">
+            Create Article
           </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-
-
         </div>
       </div>
+      <a class="navbar-item">
+        Knowledgebase
+      </a>
     </div>
-
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
+          <a class="button is-focused" onclick="toggleDarkMode()">
+            <strong>Dark/Light</strong>
           </a>
-          <a class="button is-light">
-            Log in
-          </a>
+          <div class="field">
+          <input id="switchExample" type="checkbox" name="switchExample" class="switch" checked="checked">
+            <label for="switchExample">Switch example</label>
+          </div>
         </div>
       </div>
     </div>

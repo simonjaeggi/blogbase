@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://kit.fontawesome.com/0e7ee7bb29.js" crossorigin="anonymous"></script>
-
     <%= render 'layouts/navigation' %>
-  </head>
 
+  </head>
   <body>
-    <%= yield %>
-    <% flash.each do |name, msg| %>
-    <ul>
-     <li><%= msg %></li>
-    </ul>
-<% end %>
+    <div class="column is-one-quarter"></div>
+    <div class="column is-half">
+      <%= yield %>
+      <% flash.each do |name, msg| %>
+        <ul>
+          <li><%= msg %></li>
+        </ul>
+      <% end %>
+    </div>
+    <div class="column is-one-quarter"></div>
   </body>
+
 </html>
