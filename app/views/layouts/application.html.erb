@@ -9,19 +9,13 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://kit.fontawesome.com/0e7ee7bb29.js" crossorigin="anonymous"></script>
     <%= render 'layouts/navigation' %>
-
   </head>
   <body>
-    <div class="column is-one-quarter"></div>
-    <div class="column is-half">
-      <%= yield %>
-      <% flash.each do |name, msg| %>
-        <ul>
-          <li><%= msg %></li>
-        </ul>
-      <% end %>
+    <div class="columns">
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <%= render 'shared/messages' %>
+        <%= yield %>
+      </div>
     </div>
-    <div class="column is-one-quarter"></div>
   </body>
-
 </html>

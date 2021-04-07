@@ -1,0 +1,13 @@
+<% if @article.errors.any? %>
+    <div class="notification is-danger">
+    <button class="delete" id="btnDeleteMessageBox" onclick="deleteParent('btnDeleteMessageBox')"></button>
+      <%= pluralize(@article.errors.count, "error") %>
+      prohibited this article from being saved:
+     </h2>
+
+       <% @article.errors.full_messages.each do |msg|%>
+        <li><%= msg %></li>
+       <% end %>
+    </div>
+
+<% end %>

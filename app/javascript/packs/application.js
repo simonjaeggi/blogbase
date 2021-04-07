@@ -14,4 +14,4 @@ ActiveStorage.start()
 
 
 require("packs/darkmode")
-require("bulma-extensions")
+require("packs/deleteMessageBox")
