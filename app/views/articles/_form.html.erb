@@ -1,13 +1,13 @@
 <%= render 'shared/errors' %>
 <%= form_for(@article, :html => {role: "form"}) do |f| %>
 <div class="field">
-    <%= f.label :title %>
+    <label class="label"><%= f.label :title %></label>
     <div class="control">
       <%= f.text_field :title, class: "input", placeholder: "Title of article", autofocus: true %>
     </div>
 </div>
 <div class="field">
-    <%= f.label :description %>
+    <label class="label"><%= f.label :description %></label>
     <div class="control">
       <%= f.text_area :description, rows: 10, class: "textarea", placeholder: "Body of article" %>
     </div>
