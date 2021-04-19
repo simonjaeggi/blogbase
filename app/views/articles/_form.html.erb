@@ -1,4 +1,4 @@
-<%= render 'shared/errors' %>
+<%= render 'shared/errors', obj: @article %>
 <%= form_for(@article, :html => {role: "form"}) do |f| %>
 <div class="field">
     <label class="label"><%= f.label :title %></label>

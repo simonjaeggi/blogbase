@@ -1,11 +1,11 @@
-<% if @article.errors.any? %>
+<% if obj.errors.any? %>
     <div class="notification is-danger">
     <button class="delete" id="btnDeleteMessageBox" onclick="deleteParent('btnDeleteMessageBox')"></button>
-      <%= pluralize(@article.errors.count, "error") %>
-      prohibited this article from being saved:
+      <%= pluralize(obj.errors.count, "error") %>
+      prohibited this object from being saved:
      </h2>
 
-       <% @article.errors.full_messages.each do |msg|%>
+       <% obj.errors.full_messages.each do |msg|%>
         <li><%= msg %></li>
        <% end %>
     </div>
