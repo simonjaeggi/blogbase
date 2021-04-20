@@ -15,6 +15,5 @@ ActiveStorage.start()
 
 require("packs/darkmode")
 require("packs/deleteMessageBox")
-
-
 require("packs/simplemde.min")
+require('jquery')

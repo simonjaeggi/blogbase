@@ -1,3 +1,4 @@
+
 <%= render 'shared/errors', obj: @article %>
 <%= form_for(@article, :html => {role: "form"}) do |f| %>
 <div class="field">
@@ -9,7 +10,7 @@
 <div class="field">
     <label class="label"><%= f.label :description %></label>
     <div class="control">
-      <%= f.text_area :description, rows: 10, class: "textarea", placeholder: "Body of article" %>
+      <%= f.text_area :description, rows: 10, class: "textarea", id: "textField", placeholder: "Body of article" %>
     </div>
 </div>
 <div class="field">
