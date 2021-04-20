@@ -55,5 +55,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Bulma CSS Framework
-gem "bulma-rails"#, "~> 0.9.1"
+gem 'bulma-rails'#, "~> 0.9.1"
 gem 'bulma-extensions-rails'
+
+#Redcarpet, used to render markdown
+gem 'redcarpet'
