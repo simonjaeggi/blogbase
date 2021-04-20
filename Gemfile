@@ -63,3 +63,6 @@ gem 'redcarpet'
 
 #Font awesome for ruby
 gem 'font-awesome-sass'
+
+#Editor for markdown textfields
+gem 'md_simple_editor'

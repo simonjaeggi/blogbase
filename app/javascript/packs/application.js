@@ -15,3 +15,4 @@ ActiveStorage.start()
 
 require("packs/darkmode")
 require("packs/deleteMessageBox")
+//require(md_simple_editor)
