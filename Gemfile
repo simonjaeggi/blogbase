@@ -60,3 +60,6 @@ gem 'bulma-extensions-rails'
 
 #Redcarpet, used to render markdown
 gem 'redcarpet'
+
+#Font awesome for ruby
+gem 'font-awesome-sass'
