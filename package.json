@@ -11,5 +11,24 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "description": "This README would normally document whatever steps are necessary to get the\r application up and running.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonjaeggi/blogbase.git"
+  },
+  "author": "Simon Jäggi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonjaeggi/blogbase/issues"
+  },
+  "homepage": "https://github.com/simonjaeggi/blogbase#readme"
 }

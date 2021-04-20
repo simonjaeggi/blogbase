@@ -65,4 +65,7 @@ gem 'redcarpet'
 gem 'font-awesome-sass'
 
 #Editor for markdown textfields
-gem 'md_simple_editor'
+# gem 'md_simple_editor'
+
+#Bootstrap
+#gem 'bootstrap'
