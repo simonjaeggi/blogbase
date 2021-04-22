@@ -64,8 +64,5 @@ gem 'redcarpet'
 #Font awesome for ruby
 gem 'font-awesome-sass'
 
-#Editor for markdown textfields
-# gem 'md_simple_editor'
-
-#Bootstrap
-#gem 'bootstrap'
+#Bcypt, used for pw hashing
+gem 'bcrypt'
