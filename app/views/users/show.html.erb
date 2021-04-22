@@ -1,0 +1,8 @@
+<h1 class="title is-1">Welcome to <%= @user.username %>'s page</h1>
+<div class="row">
+ <div class="content">
+  <%= gravatar_for @user, size: 150 %>
+ </div>
+</div>
+<h4 class="title is-4"><%= @user.username %>'s articles</h4>
+<%= render 'shared/article', obj: @user.articles %>

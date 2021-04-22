@@ -1,0 +1,19 @@
+<h1 class="title is-1">All Users</h1>
+<table class="table is-fullwidth is-hoverable">
+<% @users.each do |user| %>
+
+    <tr>
+        <td>
+            <%= link_to gravatar_for(user), user_path(user) %>
+        </td>
+        <td>
+            <%= link_to user.username, user_path(user) %>
+            <br>
+            <small><%= pluralize(user.articles.count, "article") if user.articles %></small>
+        </td>
+    </tr>
+
+
+
+<% end %>
+</table>
