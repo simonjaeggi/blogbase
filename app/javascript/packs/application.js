@@ -12,8 +12,7 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-
+require("packs/simplemde.min")
 require("packs/darkmode")
 require("packs/deleteMessageBox")
-require("packs/simplemde.min")
 require('jquery')
