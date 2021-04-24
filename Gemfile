@@ -66,3 +66,6 @@ gem 'font-awesome-sass'
 
 #Bcypt, used for pw hashing
 gem 'bcrypt'
+
+#Allow page pagination (listing over multiple pages)
+gem 'will_paginate'

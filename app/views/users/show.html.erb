@@ -5,4 +5,5 @@
  </div>
 </div>
 <h4 class="title is-4"><%= @user.username %>'s articles</h4>
-<%= render 'shared/article', obj: @user.articles %>
+<%= render 'shared/article', obj: @user_articles %>
+<%= will_paginate @user_articles %>
