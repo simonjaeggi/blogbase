@@ -69,3 +69,6 @@ gem 'bcrypt'
 
 #Allow page pagination (listing over multiple pages)
 gem 'will_paginate'
+
+#simplemde
+gem 'simplemde-rails'
