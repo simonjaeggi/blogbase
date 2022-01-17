@@ -1,7 +1,7 @@
-<h2 class="title is-2">Title: <%= @article.title %></h2>
+<h2 class="title is-2"><%= @article.title %></h2>
 <div>
-    <strong>Description:</strong>
-    <hr>
+    <i><%= @article.shortDescription %></i> <br>
+    <hr> 
     <div class='content'>
         <%= 
             markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)

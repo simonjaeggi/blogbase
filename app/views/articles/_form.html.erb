@@ -13,6 +13,12 @@
     </div>
 </div>
 <div class="field">
+    <label class="label"><%= f.label "Short description" %></label>
+    <div class="control">
+      <%= f.text_field :shortDescription,  class: "input", placeholder: "Short description of your article" %>
+    </div>
+</div>
+<div class="field">
     <label class="label"><%= f.label :description %></label>
     <div class="control">
       <%= f.text_area :description, rows: 10, class: "textarea", id: "textField", placeholder: "Body of article" %>
